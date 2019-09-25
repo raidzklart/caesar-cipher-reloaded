@@ -9,5 +9,5 @@ def caesar_cipher(str, int)
             builder << b.chr
         end
     end
-    puts builder
+    builder
 end

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Caesar Cipher</h1>
+  <form action="/cipher" method="post">
+    <p>Enter the text you want to encrypt:</p>
+    <textarea rows="4" cols="50" name="plain_text"></textarea><br>
+    Offset: <input type="text" name="offset"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <% unless cipher.nil? %>
+  <hr>
+  <h2>Here is your encrypted text:</h2>
+    <%= cipher %>
+  <% end %>
+</body>
+</html>
